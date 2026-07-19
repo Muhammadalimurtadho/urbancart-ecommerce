@@ -1,41 +1,49 @@
 # UrbanCart
 
-UrbanCart adalah project website toko online fashion dan lifestyle modern untuk portfolio frontend web developer. Website ini dibuat sebagai simulasi e-commerce lengkap tanpa backend, database, framework, atau library JavaScript.
+UrbanCart is a modern fashion and lifestyle e-commerce website built as a frontend portfolio project. This project simulates a complete online shopping experience using HTML, CSS, and vanilla JavaScript without any backend, database, framework, or external JavaScript library.
 
-## Fitur
+## Live Demo
 
-- Homepage modern dengan hero, kategori, produk terbaru, best seller, countdown sale, testimonial slider, dan newsletter.
-- Katalog produk dengan minimal 20 data produk dummy.
-- Pencarian live berdasarkan nama, kategori, tipe, dan deskripsi.
-- Filter gabungan berdasarkan kategori, harga, rating, diskon, stok, warna, dan ukuran.
-- Sorting produk: terbaru, harga terendah, harga tertinggi, rating tertinggi, nama A-Z, dan diskon terbesar.
-- Grid view dan list view yang tersimpan di LocalStorage.
-- Pagination maksimal 8 produk per halaman.
-- Halaman detail produk berdasarkan parameter URL `product-detail.html?id=1`.
-- Image gallery, zoom sederhana, pilihan ukuran/warna, quantity, tab informasi, review dummy, dan produk terkait.
-- Quick view modal dengan Escape key, klik overlay, dan close button.
-- Wishlist dengan LocalStorage, counter header, hapus, hapus semua, dan pindahkan ke keranjang.
-- Keranjang belanja dengan update quantity, subtotal, diskon, ongkir, biaya layanan, progress gratis ongkir, dan kode promo.
-- Kode promo dummy: `URBAN10`, `NEWUSER`, dan `FREESHIP`.
-- Checkout form dua kolom dengan validasi lengkap.
-- Metode pengiriman dan pembayaran simulasi.
-- Checkout WhatsApp menggunakan `wa.me`.
-- Halaman pesanan berhasil dan riwayat pesanan di LocalStorage.
-- Dark mode dan light mode tersimpan di LocalStorage.
-- Toast notification success, error, warning, dan info.
-- Loading screen, skeleton katalog, smooth scroll, reveal animation, back to top, dan mobile menu slide.
-- Responsive untuk desktop, laptop, tablet, smartphone, dan smartphone kecil.
-- SEO dasar pada setiap halaman.
+https://muhammadalimurtadho.github.io/urbancart-ecommerce/
 
-## Teknologi
+## GitHub Repository
+
+https://github.com/Muhammadalimurtadho/urbancart-ecommerce
+
+## Features
+
+- Modern homepage with hero section, categories, new arrivals, best sellers, sale countdown, testimonials, and newsletter section.
+- Product catalog with 20+ dummy products.
+- Live search by product name, category, type, and description.
+- Advanced product filtering by category, price, rating, discount, stock, color, and size.
+- Product sorting by newest, lowest price, highest price, highest rating, name A-Z, and biggest discount.
+- Grid view and list view with LocalStorage preference.
+- Product pagination with 8 products per page.
+- Product detail page using URL parameter, for example `product-detail.html?id=1`.
+- Product image gallery, simple zoom, size/color selection, quantity control, information tabs, dummy reviews, and related products.
+- Quick view modal with Escape key, overlay click, and close button support.
+- Wishlist feature using LocalStorage.
+- Shopping cart with quantity update, subtotal, discount, shipping fee, service fee, free shipping progress, and promo code support.
+- Dummy promo codes: `URBAN10`, `NEWUSER`, and `FREESHIP`.
+- Checkout form with complete validation.
+- Simulated shipping and payment method selection.
+- WhatsApp checkout integration using `wa.me`.
+- Order success page and order history using LocalStorage.
+- Light mode and dark mode with saved user preference.
+- Toast notifications for success, error, warning, and info messages.
+- Loading screen, catalog skeleton loading, smooth scroll, reveal animation, back to top button, and mobile slide menu.
+- Fully responsive layout for desktop, laptop, tablet, mobile, and small mobile screens.
+- Basic SEO meta tags on each page.
+
+## Tech Stack
 
 - HTML5
 - CSS3
-- JavaScript Vanilla
+- Vanilla JavaScript
 - LocalStorage
-- SVG assets lokal
+- Local SVG Assets
 
-## Struktur Folder
+## Folder Structure
 
 ```text
 urbancart/
@@ -69,19 +77,21 @@ urbancart/
     └── icons/
 ```
 
-## Cara Menjalankan
+## How to Run
 
-Buka file `index.html` langsung di browser, atau jalankan dengan Live Server/static server:
+Open `index.html` directly in your browser, or run the project using a static server such as Live Server.
+
+You can also run it with:
 
 ```bash
 npx serve .
 ```
 
-Project ini tidak membutuhkan build step.
+This project does not require any build step.
 
-## Cara Mengganti Nomor WhatsApp
+## How to Change the WhatsApp Number
 
-Buka file `js/products.js`, lalu ubah nilai berikut:
+Open `js/products.js`, then update the following value:
 
 ```javascript
 const STORE_CONFIG = {
@@ -89,18 +99,18 @@ const STORE_CONFIG = {
 };
 ```
 
-Gunakan format nomor internasional tanpa tanda `+`.
+Use the international phone number format without the `+` symbol.
 
-## Cara Menambahkan Produk
+## How to Add a New Product
 
-Buka `js/products.js`, lalu tambahkan object baru ke array `UC_PRODUCTS`. Pastikan setiap produk memiliki `id` unik, nama, kategori, harga, rating, stok, ukuran, warna, gambar, deskripsi, detail, tanggal, jumlah terjual, dan SKU.
+Open `js/products.js`, then add a new object to the `UC_PRODUCTS` array. Make sure each product has a unique `id`, name, category, price, rating, stock data, size, color, image, description, details, created date, sold count, and SKU.
 
-Contoh singkat:
+Example:
 
 ```javascript
 {
   id: 21,
-  name: "Nama Produk Baru",
+  name: "New Product Name",
   category: "Men",
   type: "Shirt",
   price: 199000,
@@ -113,28 +123,21 @@ Contoh singkat:
   colors: ["Black", "White"],
   sizes: ["S", "M", "L"],
   images: ["assets/images/product-shirt.svg"],
-  description: "Deskripsi produk.",
-  details: ["Detail pertama", "Detail kedua"],
+  description: "Product description.",
+  details: ["First detail", "Second detail"],
   createdAt: "2026-07-14",
   sold: 10,
   sku: "URB-NEW-021"
 }
 ```
 
-## Screenshot Placeholder
+## Project Purpose
 
-Tambahkan screenshot project setelah website dipublikasikan:
+This project was created to practice frontend development skills by building a practical, user-focused e-commerce interface. It demonstrates multi-page layout structure, DOM manipulation, responsive design, product filtering, cart management, form validation, and LocalStorage-based state management.
 
-```text
-assets/screenshots/homepage.png
-assets/screenshots/catalog.png
-assets/screenshots/checkout.png
-```
+## Author
 
-## Link Demo Placeholder
+Muhammad Ali Murtadho
 
-```text
-https://Muhammadalimurtadho.github.io/urbancart-ecommerce/
-```
-
-
+- GitHub: https://github.com/Muhammadalimurtadho
+- Live Demo: https://muhammadalimurtadho.github.io/urbancart-ecommerce/
