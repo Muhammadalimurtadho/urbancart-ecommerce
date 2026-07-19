@@ -131,8 +131,3 @@ assets/screenshots/catalog.png
 assets/screenshots/checkout.png
 ```
 
-## Link Demo Placeholder
-
-```text
-https://Muhammadalimurtadho.github.io/urbancart-ecommerce/
-```
