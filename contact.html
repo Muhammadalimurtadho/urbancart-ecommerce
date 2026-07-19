@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - UrbanCart</title>
+  <meta name="description" content="Hubungi UrbanCart untuk pertanyaan produk, pesanan, dan kerja sama.">
+  <meta property="og:title" content="Contact - UrbanCart">
+  <meta property="og:description" content="Kontak customer service UrbanCart.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body data-page="contact">
+  <div id="site-header"></div>
+  <main class="page">
+    <section class="container page-title">
+      <h1>Contact</h1>
+      <p>Kirim pesan simulasi atau hubungi customer service UrbanCart.</p>
+    </section>
+    <section class="container section contact-grid">
+      <div class="content-card">
+        <h2>Informasi Toko</h2>
+        <p>Alamat: Jl. Sudirman No. 88, Jakarta Pusat</p>
+        <p>Email: hello@urbancart.local</p>
+        <p>WhatsApp: +62 812-3456-7890</p>
+        <p>Jam Operasional: Senin - Sabtu, 09.00 - 20.00 WIB</p>
+        <div class="map-placeholder">Store Location Placeholder</div>
+      </div>
+      <form class="content-card" id="contactForm">
+        <h2>Kirim Pesan</h2>
+        <div class="form-grid">
+          <label>Nama<input name="name" type="text" required></label>
+          <label>Email<input name="email" type="email" required></label>
+          <label class="full">Subjek<input name="subject" type="text" required></label>
+          <label class="full">Pesan<textarea name="message" required></textarea></label>
+        </div>
+        <button class="btn btn-dark" type="submit">Kirim Pesan</button>
+        <p class="form-message" id="contactMessage"></p>
+      </form>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/contact.js"></script>
+</body>
+</html>

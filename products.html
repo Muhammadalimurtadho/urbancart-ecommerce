@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products - UrbanCart</title>
+  <meta name="description" content="Katalog produk UrbanCart lengkap dengan pencarian, filter, sorting, wishlist, dan cart.">
+  <meta property="og:title" content="Products - UrbanCart">
+  <meta property="og:description" content="Cari pakaian, sepatu, tas, jam tangan, dan aksesori modern.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body data-page="products">
+  <div id="site-header"></div>
+  <main class="page">
+    <section class="container page-title">
+      <h1>Products</h1>
+      <p>Gunakan pencarian, filter, sorting, dan tampilan grid/list untuk menemukan produk yang paling sesuai.</p>
+    </section>
+    <section class="container catalog-layout">
+      <aside class="filter-panel">
+        <h2>Filter</h2>
+        <form id="filterForm">
+          <div class="filter-group">
+            <label for="categoryFilter">Kategori</label>
+            <select id="categoryFilter" name="category">
+              <option value="">Semua kategori</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="priceFilter">Rentang harga</label>
+            <select id="priceFilter" name="price">
+              <option value="">Semua harga</option>
+              <option value="0-150000">Di bawah Rp150.000</option>
+              <option value="150000-300000">Rp150.000 - Rp300.000</option>
+              <option value="300000-500000">Rp300.000 - Rp500.000</option>
+              <option value="500000-9999999">Di atas Rp500.000</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label for="ratingFilter">Rating minimum</label>
+            <select id="ratingFilter" name="rating">
+              <option value="">Semua rating</option>
+              <option value="4">4.0 ke atas</option>
+              <option value="4.5">4.5 ke atas</option>
+              <option value="4.8">4.8 ke atas</option>
+            </select>
+          </div>
+          <div class="filter-group">
+            <label class="check-row"><input type="checkbox" name="discount"> Produk diskon</label>
+            <label class="check-row"><input type="checkbox" name="stock"> Hanya tersedia</label>
+          </div>
+          <div class="filter-group">
+            <label for="colorFilter">Warna</label>
+            <select id="colorFilter" name="color"><option value="">Semua warna</option></select>
+          </div>
+          <div class="filter-group">
+            <label for="sizeFilter">Ukuran</label>
+            <select id="sizeFilter" name="size"><option value="">Semua ukuran</option></select>
+          </div>
+          <button class="btn btn-ghost" type="reset">Reset Filter</button>
+        </form>
+      </aside>
+      <div>
+        <div class="catalog-toolbar">
+          <label for="searchInput">
+            <span class="sr-only">Cari produk</span>
+            <input id="searchInput" type="search" placeholder="Cari nama, kategori, atau deskripsi produk">
+          </label>
+          <select id="sortSelect" aria-label="Urutkan produk">
+            <option value="newest">Terbaru</option>
+            <option value="low">Harga terendah</option>
+            <option value="high">Harga tertinggi</option>
+            <option value="rating">Rating tertinggi</option>
+            <option value="az">Nama A-Z</option>
+            <option value="discount">Diskon terbesar</option>
+          </select>
+          <div class="toolbar-actions" aria-label="Pilihan tampilan">
+            <button class="icon-button" type="button" data-view="grid" aria-label="Grid view">▦</button>
+            <button class="icon-button" type="button" data-view="list" aria-label="List view">☰</button>
+          </div>
+        </div>
+        <p id="resultInfo"></p>
+        <div class="skeleton-grid" id="catalogSkeleton">
+          <div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div><div class="skeleton"></div>
+        </div>
+        <div class="product-grid" id="catalogGrid"></div>
+        <div class="pagination" id="pagination"></div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/catalog.js"></script>
+</body>
+</html>

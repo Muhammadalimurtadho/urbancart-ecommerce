@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keranjang - UrbanCart</title>
+  <meta name="description" content="Kelola keranjang UrbanCart, kode promo, subtotal, ongkir, dan total pembayaran.">
+  <meta property="og:title" content="Keranjang - UrbanCart">
+  <meta property="og:description" content="Keranjang belanja UrbanCart tersimpan dengan LocalStorage.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body data-page="cart">
+  <div id="site-header"></div>
+  <main class="page">
+    <section class="container page-title">
+      <h1>Keranjang</h1>
+      <p>Atur jumlah produk, gunakan promo, dan lanjutkan ke checkout.</p>
+    </section>
+    <section class="container cart-layout">
+      <div>
+        <div class="cart-actions">
+          <a class="btn btn-ghost" href="products.html">Lanjut Belanja</a>
+          <button class="btn btn-ghost" type="button" id="clearCart">Kosongkan Keranjang</button>
+        </div>
+        <div class="cart-list" id="cartList"></div>
+      </div>
+      <aside class="summary-card" id="cartSummary"></aside>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/cart.js"></script>
+</body>
+</html>

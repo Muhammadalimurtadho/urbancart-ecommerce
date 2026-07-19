@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UrbanCart - Modern Fashion & Lifestyle Store</title>
+  <meta name="description" content="UrbanCart adalah toko fashion dan lifestyle modern untuk pakaian, sepatu, tas, jam tangan, dan aksesori.">
+  <meta property="og:title" content="UrbanCart - Modern Fashion & Lifestyle Store">
+  <meta property="og:description" content="Belanja outfit modern, clean, dan nyaman untuk gaya harian.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body data-page="home">
+  <div class="loader" data-loader><div class="loader-mark" aria-label="Memuat UrbanCart"></div></div>
+  <div id="site-header"></div>
+  <main class="page">
+    <section class="container hero">
+      <div class="hero-copy">
+        <span class="eyebrow">New Collection</span>
+        <h1>Style That Defines You</h1>
+        <p>Temukan fashion dan lifestyle essentials dengan desain modern, nyaman dipakai, dan mudah dipadukan untuk aktivitas harian di kota.</p>
+        <div class="hero-actions">
+          <a class="btn btn-dark" href="products.html">Shop Now</a>
+          <a class="btn btn-ghost" href="#collection">View Collection</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="assets/images/hero-fashion.svg" alt="Koleksi fashion UrbanCart">
+        <div class="promo-card">
+          <span>Mid Year Drop</span>
+          <strong>50%</strong>
+          <small>Selected items this week</small>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container benefit-grid">
+        <article class="benefit-item reveal">
+          <div data-icon="truck"></div>
+          <h3>Gratis Ongkir</h3>
+          <p>Untuk pembelian minimum Rp500.000 ke seluruh Indonesia.</p>
+        </article>
+        <article class="benefit-item reveal">
+          <div data-icon="shield"></div>
+          <h3>Pembayaran Aman</h3>
+          <p>Simulasi checkout rapi dengan pilihan metode pembayaran.</p>
+        </article>
+        <article class="benefit-item reveal">
+          <div data-icon="refresh"></div>
+          <h3>Retur Produk</h3>
+          <p>Pengembalian mudah sesuai syarat dan kondisi produk.</p>
+        </article>
+        <article class="benefit-item reveal">
+          <div data-icon="headset"></div>
+          <h3>Customer Support</h3>
+          <p>Tim UrbanCart siap membantu pesanan dan pertanyaan kamu.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="collection">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Kategori Pilihan</h2>
+            <p>Belanja berdasarkan gaya yang kamu butuhkan hari ini.</p>
+          </div>
+          <a class="btn btn-ghost" href="products.html">Lihat Semua</a>
+        </div>
+        <div class="category-grid">
+          <a class="category-card reveal" href="products.html?category=Men">
+            <img src="assets/images/category-men.svg" alt="Kategori Men">
+            <div><h3>Men</h3><span>Explore</span></div>
+          </a>
+          <a class="category-card reveal" href="products.html?category=Women">
+            <img src="assets/images/category-women.svg" alt="Kategori Women">
+            <div><h3>Women</h3><span>Explore</span></div>
+          </a>
+          <a class="category-card reveal" href="products.html?category=Shoes">
+            <img src="assets/images/category-shoes.svg" alt="Kategori Shoes">
+            <div><h3>Shoes</h3><span>Explore</span></div>
+          </a>
+          <a class="category-card reveal" href="products.html?category=Bags">
+            <img src="assets/images/category-bags.svg" alt="Kategori Bags">
+            <div><h3>Bags</h3><span>Explore</span></div>
+          </a>
+          <a class="category-card reveal" href="products.html?category=Accessories">
+            <img src="assets/images/category-accessories.svg" alt="Kategori Accessories">
+            <div><h3>Accessories</h3><span>Explore</span></div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="new-arrivals">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>New Arrivals</h2>
+            <p>Produk terbaru yang baru masuk katalog UrbanCart.</p>
+          </div>
+          <a class="btn btn-ghost" href="products.html?badge=New">View All</a>
+        </div>
+        <div class="product-grid" data-new-arrivals></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container sale-banner reveal">
+        <div>
+          <span class="eyebrow">Limited Sale</span>
+          <h2>Mid Year Sale - Up to 50% Off</h2>
+          <p>Promo berjalan untuk item pilihan. Checkout lebih cepat sebelum waktu habis.</p>
+        </div>
+        <div class="countdown" data-countdown aria-label="Countdown promo"></div>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Best Seller</h2>
+            <p>Item yang paling banyak dibeli pelanggan UrbanCart.</p>
+          </div>
+          <a class="btn btn-ghost" href="products.html?badge=Best%20Seller">View All</a>
+        </div>
+        <div class="product-grid" data-best-seller></div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Customer Stories</h2>
+            <p>Beberapa pendapat pelanggan setelah berbelanja di UrbanCart.</p>
+          </div>
+        </div>
+        <div class="testimonial-wrap reveal">
+          <div data-testimonial-slider>
+            <article class="testimonial is-active">
+              <blockquote>"Barangnya clean dan ukurannya sesuai. Packaging rapi, cocok banget buat hadiah."</blockquote>
+              <p>Rania Putri, Bandung</p>
+            </article>
+            <article class="testimonial">
+              <blockquote>"Sneakers-nya ringan dipakai seharian. Checkout via WhatsApp juga praktis."</blockquote>
+              <p>Kevin Hartono, Jakarta</p>
+            </article>
+            <article class="testimonial">
+              <blockquote>"Pilihan produknya tidak berlebihan, jadi gampang cari item yang benar-benar kepakai."</blockquote>
+              <p>Melati Sari, Yogyakarta</p>
+            </article>
+          </div>
+          <div class="testimonial-controls">
+            <button class="icon-button" type="button" data-testimonial-prev aria-label="Testimoni sebelumnya">‹</button>
+            <div class="dots" data-testimonial-dots></div>
+            <button class="icon-button" type="button" data-testimonial-next aria-label="Testimoni berikutnya">›</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container newsletter-band reveal">
+        <div>
+          <h2>Dapatkan Update Koleksi</h2>
+          <p>Subscribe untuk menerima info produk baru, promo, dan inspirasi outfit.</p>
+        </div>
+        <form data-newsletter-form>
+          <label for="newsletter-email">Email</label>
+          <div class="inline-form">
+            <input id="newsletter-email" name="email" type="email" placeholder="nama@email.com" autocomplete="email">
+            <button class="btn btn-dark" type="submit">Subscribe</button>
+          </div>
+          <p class="form-message" data-newsletter-message></p>
+        </form>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/home-icons.js"></script>
+</body>
+</html>

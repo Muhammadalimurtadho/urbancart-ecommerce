@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wishlist - UrbanCart</title>
+  <meta name="description" content="Daftar produk favorit UrbanCart yang disimpan di LocalStorage.">
+  <meta property="og:title" content="Wishlist - UrbanCart">
+  <meta property="og:description" content="Kelola produk favorit dan pindahkan ke keranjang.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body data-page="wishlist">
+  <div id="site-header"></div>
+  <main class="page">
+    <section class="container page-title">
+      <h1>Wishlist</h1>
+      <p>Produk favorit kamu tersimpan otomatis di browser.</p>
+    </section>
+    <section class="container">
+      <div class="cart-actions">
+        <a class="btn btn-ghost" href="products.html">Cari Produk</a>
+        <button class="btn btn-ghost" type="button" id="clearWishlist">Hapus Semua</button>
+      </div>
+      <div class="wishlist-list" id="wishlistList"></div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/wishlist.js"></script>
+</body>
+</html>

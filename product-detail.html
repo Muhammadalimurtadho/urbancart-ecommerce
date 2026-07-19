@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detail Produk - UrbanCart</title>
+  <meta name="description" content="Detail produk UrbanCart dengan pilihan ukuran, warna, cart, wishlist, review, dan produk terkait.">
+  <meta property="og:title" content="Detail Produk - UrbanCart">
+  <meta property="og:description" content="Lihat detail, ukuran, warna, dan review produk UrbanCart.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body data-page="detail">
+  <div id="site-header"></div>
+  <main class="page">
+    <section class="container section">
+      <div id="productDetail"></div>
+      <div class="tabs" id="productTabs"></div>
+    </section>
+    <section class="section section-soft">
+      <div class="container">
+        <div class="section-header">
+          <div>
+            <h2>Produk Terkait</h2>
+            <p>Rekomendasi dari kategori yang sama.</p>
+          </div>
+        </div>
+        <div class="product-grid" id="relatedProducts"></div>
+      </div>
+    </section>
+  </main>
+  <div id="site-footer"></div>
+  <script src="js/products.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/product-detail.js"></script>
+</body>
+</html>
