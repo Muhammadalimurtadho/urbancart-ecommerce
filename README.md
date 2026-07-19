@@ -140,4 +140,3 @@ This project was created to practice frontend development skills by building a p
 Muhammad Ali Murtadho
 
 - GitHub: https://github.com/Muhammadalimurtadho
-- Live Demo: https://muhammadalimurtadho.github.io/urbancart-ecommerce/
